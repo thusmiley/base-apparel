@@ -1,1 +1,244 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: white;
+  color: #ce9797;
+}
+
+.container {
+  height: 100%;
+  width: 100vw;
+  background: url("./images/bg-pattern-desktop.svg") top center no-repeat, linear-gradient(135deg, white, #fff5f5);
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  width: 10em;
+  top: 3em;
+  left: 9em;
+}
+
+.card {
+  min-height: 100%;
+  margin-left: 9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.card .hero-desktop {
+  display: block;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card .hero-mobile {
+  display: none;
+}
+
+.heading {
+  font-size: 4em;
+  letter-spacing: .3em;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 3.5em;
+}
+
+.heading span {
+  color: #413a3a;
+  font-weight: 400;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+}
+
+.content .message {
+  width: 30%;
+  margin: 30px 0 50px 0;
+  line-height: 1.6;
+}
+
+.signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.signup button {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  padding: 15px 40px 15px 40px;
+  border-radius: 30px;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 83%;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 20px 20px 3px #eee2e2d7;
+          box-shadow: 3px 20px 20px 3px #eee2e2d7;
+}
+
+.signup button img {
+  width: 10px;
+}
+
+.email {
+  width: 100%;
+  border: solid #ce9797 1px;
+  border-radius: 30px;
+  padding: 16px 30px 16px 30px;
+  background-color: transparent;
+  opacity: 0.7;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+::placeholder {
+  color: #ce9797;
+}
+
+.email:active, .email:focus {
+  border: solid #f96262 1px;
+  color: #413a3a;
+}
+
+.alert {
+  margin: 10px 0 0 30px;
+  font-size: 11px;
+  color: #f96262;
+  display: none;
+}
+
+button:hover {
+  background-image: none;
+  background-color: #ce9797;
+}
+
+.error {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 72%;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  body {
+    min-height: 100%;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-height: 115%;
+    background: linear-gradient(135deg, white, #fff5f5);
+    background-size: cover;
+  }
+  .logo {
+    position: absolute;
+    width: 110px;
+    top: 20px;
+    left: 30px;
+  }
+  .card {
+    max-width: 400px;
+    margin: 50px 0 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card .hero-desktop {
+    display: none;
+  }
+  .card .hero-mobile {
+    display: block;
+    top: 50%;
+    left: 27%;
+    margin: 0;
+  }
+  .heading {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10%;
+  }
+  .content > .message {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .signup {
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+  }
+  .signup button {
+    position: absolute;
+    left: 80%;
+    padding: 15px 23px 15px 23px;
+  }
+  .alert {
+    margin: 0;
+    margin-left: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

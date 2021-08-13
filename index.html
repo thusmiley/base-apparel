@@ -7,12 +7,60 @@
     <meta property="og:title" content="Base Apparel" />
     <meta property="og:description" content="Base Apparel" />
     <meta property="og:image" content="images/desktop-preview.jpg" />
-    <meta property="og:url" content="" />
+    <meta
+      property="og:url"
+      content="https://thusmiley.github.io/base-apparel/"
+    />
     <link rel="stylesheet" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="./style.css" />
     <title>Base Apparel</title>
   </head>
   <body>
+    <div class="container">
+      <img class="logo" src="./images/logo.svg" alt="" />
+      <div class="card">
+        <img src="./images/hero-desktop.jpg" alt="" class="hero-desktop" />
+        <img src="./images/hero-mobile.jpg" alt="" class="hero-mobile" />
+        <div class="content">
+          <h1 class="heading">
+            WE'RE <br />
+            <span
+              >COMING <br />
+              SOON</span
+            >
+          </h1>
+          <p class="message">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form name="form" action="#" class="signup">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              class="email"
+              required
+            />
+            <img
+              class="error"
+              id="error"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <button
+              type="submit"
+              name="submit"
+              class="submit"
+              onClick="Validate(document.form.email)"
+            >
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </form>
+          <p class="alert" id="alert">Please provide a valid email</p>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
